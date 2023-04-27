@@ -1,6 +1,7 @@
 const { Schema, model } = require("mongoose");
 
 const AdsSchema = new Schema({
+  _id: {type: Number, required: true},
   companyId: {type: Number, required: true},
   primaryText: {type: String, required: true},
   headline: {type: String, required: true},
